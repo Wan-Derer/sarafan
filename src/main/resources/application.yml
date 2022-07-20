@@ -1,2 +1,13 @@
 server:
   port: 8888
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/sarafan
+    username: postgres
+    password: postgres
+
+  jpa:
+    generate-ddl: true
+    properties.hibernate.jdbc.lob.non_contextual_creation: true
+
