@@ -12,6 +12,12 @@ spring:
     properties.hibernate.jdbc.lob.non_contextual_creation: true
     open-in-view: false
 
+  session:
+    jdbc:
+      initialize-schema: always
+      table-name: SPRING_SESSION
+      schema: classpath:session_tables.sql
+
   config:
     import: file:config/config-security.yml
 
